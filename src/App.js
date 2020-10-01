@@ -1,4 +1,4 @@
-import { getElementError } from "@testing-library/react";
+
 import React, { useEffect, useState } from "react";
 import "./App.css";
 import Recipe from "./components/Recipe";
@@ -35,7 +35,7 @@ function App() {
 	};
 	return (
 		<div className="App">
-			<h1 > React Reicpe App </h1>
+			<h1 className='headingTitle'> React Reicpe App </h1>
 			<form onSubmit={getSearch} className="search-form">
 				<input
 					className="search-bar"

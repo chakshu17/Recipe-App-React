@@ -1,7 +1,6 @@
 .App {
-  min-height: 100vh;
-
-  /* text-align: center; */
+	min-height: 100vh;
+	/* text-align: center; */
 	background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
 }
 .search-form {
@@ -23,8 +22,15 @@
 	padding: 10px 20px;
 	color: white;
 }
-.recipes{
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+.recipes {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.headingTitle {
+	text-align: center;
+	font-size: 50px;
+	font-family: cursive;
+	color: blueviolet;
 }
