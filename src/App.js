@@ -35,7 +35,7 @@ function App() {
 	};
 	return (
 		<div className="App">
-			<h1>Hello React </h1>
+			<h1 > React Reicpe App </h1>
 			<form onSubmit={getSearch} className="search-form">
 				<input
 					className="search-bar"
@@ -45,21 +45,23 @@ function App() {
 				/>
 				<button
 					// onClick={() => setCounter(counter + 1)}
-					className="search-buton"
+					className="search-button"
 					type="submit"
 				>
 					Search
 				</button>
 			</form>
-			{recipes.map((recipe) => (
-				<Recipe
-					key={recipe.recipe.label}
-					title={recipe.recipe.label}
-					calories={recipe.recipe.calories}
-					image={recipe.recipe.image}
-					ingredients={recipe.recipe.ingredients}
-				/>
-			))}
+			<div className="recipes">
+				{recipes.map((recipe) => (
+					<Recipe
+						key={recipe.recipe.label}
+						title={recipe.recipe.label}
+						calories={recipe.recipe.calories}
+						image={recipe.recipe.image}
+						ingredients={recipe.recipe.ingredients}
+					/>
+				))}
+			</div>
 		</div>
 	);
 }
