@@ -7,7 +7,7 @@ function App() {
 	const APP_KEY = "fb69ef518fc400afede708bc45c9545b";
 
 	const [recipes, setRecipes] = useState([]);
-	const [search, setSearch] = useState("");
+	const [search, setSearch] = useState("chicken");
 	const [query, setQuery] = useState("chicken");
 
 	useEffect(() => {
@@ -34,7 +34,8 @@ function App() {
 	};
 	return (
 		<div className="App">
-			<h1 className='headingTitle'> React Reicpe App </h1>
+			<h1 className='headingTitle'> Recipe App </h1>
+		
 			<form onSubmit={getSearch} className="search-form">
 				<input
 					className="search-bar"
